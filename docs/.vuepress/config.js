@@ -13,11 +13,15 @@ module.exports = {
     navbar: [
       // 嵌套 Group - 最大深度为 2
       {
-        text: "Group",
+        text: "Scripts",
         children: [
           {
-            text: "SubGroup",
-            children: ["/group/sub/foo.md", "/group/sub/bar.md"],
+            text: "Shell",
+            children: ["/scripts/shell/1.md"],
+          },
+          {
+            text: "PowerShell",
+            children: ["/scripts/powershell/1.md"],
           },
         ],
       },
@@ -31,13 +35,6 @@ module.exports = {
             // 该元素将一直处于激活状态
             activeMatch: "/",
           },
-          {
-            text: "Active on /foo/",
-            link: "/not-foo/",
-            // 该元素在当前路由路径是 /foo/ 开头时激活
-            // 支持正则表达式
-            activeMatch: "^/foo/",
-          },
         ],
       },
       // NavbarItem
@@ -49,6 +46,6 @@ module.exports = {
     sidebarDepth: 5,
     // sidebar: "auto",
     // 第一个空的代表默认的导航配置, 其实就是auto的 markdown的TOC, 其他是自己要加的比如home,比如about
-    sidebar: ["", "about", "about1"],
+    sidebar: ["", "about"],
   },
 };
