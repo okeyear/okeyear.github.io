@@ -15,4 +15,9 @@ features:
 footer: MIT Licensed | Copyright © 2021-present 
 ---
 
-### 3 title
+### 本博客搭建参考如下教程
+VuePress (vuejs.org)
+https://v2.vuepress.vuejs.org/zh/
+
+【啰里啰嗦】一步步搭建 VuePress 及优化_哔哩哔哩_bilibili
+https://www.bilibili.com/video/BV1vb411m7NY
