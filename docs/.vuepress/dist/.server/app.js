@@ -65,6 +65,12 @@ const pagesComponents = {
   "v-8daa1a0e": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return index_html$2;
   })),
+  "v-366bcf6c": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _1_html$5;
+  })),
+  "v-155713b2": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return _1_html$3;
+  })),
   "v-3706649a": vue.defineAsyncComponent(() => Promise.resolve().then(function() {
     return _404_html$2;
   }))
@@ -75,6 +81,12 @@ const pagesData$1 = {
   }).then(({ data: data2 }) => data2),
   "v-8daa1a0e": () => Promise.resolve().then(function() {
     return index_html;
+  }).then(({ data: data2 }) => data2),
+  "v-366bcf6c": () => Promise.resolve().then(function() {
+    return _1_html$1;
+  }).then(({ data: data2 }) => data2),
+  "v-155713b2": () => Promise.resolve().then(function() {
+    return _1_html;
   }).then(({ data: data2 }) => data2),
   "v-3706649a": () => Promise.resolve().then(function() {
     return _404_html;
@@ -337,29 +349,19 @@ const themeData$1 = {
   "logo": "/images/logo.png",
   "navbar": [
     {
-      "text": "Group",
+      "text": "Scripts",
       "children": [
         {
-          "text": "SubGroup",
+          "text": "Shell",
           "children": [
-            "/group/sub/foo.md",
-            "/group/sub/bar.md"
+            "/scripts/shell/1.md"
           ]
-        }
-      ]
-    },
-    {
-      "text": "Group 2",
-      "children": [
-        {
-          "text": "Always active",
-          "link": "/",
-          "activeMatch": "/"
         },
         {
-          "text": "Active on /foo/",
-          "link": "/not-foo/",
-          "activeMatch": "^/foo/"
+          "text": "PowerShell",
+          "children": [
+            "/scripts/powershell/1.md"
+          ]
         }
       ]
     },
@@ -371,8 +373,7 @@ const themeData$1 = {
   "sidebarDepth": 5,
   "sidebar": [
     "",
-    "about",
-    "about1"
+    "about"
   ],
   "locales": {
     "/": {
@@ -437,7 +438,7 @@ var clientAppEnhance2 = defineClientAppEnhance(({ app }) => {
     }
   });
 });
-const _sfc_main$q = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$s = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   props: {
     type: {
@@ -471,11 +472,11 @@ const _sfc_main$q = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/Badge.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
 var CodeGroup = vue.defineComponent({
   name: "CodeGroup",
@@ -558,7 +559,7 @@ var CodeGroup = vue.defineComponent({
 const __default__$1 = vue.defineComponent({
   name: "CodeGroupItem"
 });
-const _sfc_main$p = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
+const _sfc_main$r = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadValues({}, __default__$1), {
   __ssrInlineRender: true,
   props: {
     title: {
@@ -582,11 +583,11 @@ const _sfc_main$p = /* @__PURE__ */ vue.defineComponent(__spreadProps(__spreadVa
     };
   }
 }));
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/CodeGroupItem.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
 const darkModeSymbol = Symbol("");
 const useDarkMode = () => {
@@ -749,7 +750,7 @@ const resolveMultiSidebarItems = (sidebarConfig, sidebarDepth) => {
   return resolveArraySidebarItems(matchedSidebarConfig, sidebarDepth);
 };
 const useThemeLocaleData = () => useThemeLocaleData$1();
-const _sfc_main$o = /* @__PURE__ */ vue.defineComponent({
+const _sfc_main$q = /* @__PURE__ */ vue.defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     const themeLocale = useThemeLocaleData();
@@ -769,19 +770,19 @@ const _sfc_main$o = /* @__PURE__ */ vue.defineComponent({
     };
   }
 });
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
+const _sfc_setup$q = _sfc_main$q.setup;
+_sfc_main$q.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../../../../node_modules/@vuepress/theme-default/lib/client/components/global/ExternalLinkIcon.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
 };
 var index = "";
 var clientAppEnhance3 = defineClientAppEnhance(({ app, router }) => {
-  app.component("Badge", _sfc_main$q);
+  app.component("Badge", _sfc_main$s);
   app.component("CodeGroup", CodeGroup);
-  app.component("CodeGroupItem", _sfc_main$p);
+  app.component("CodeGroupItem", _sfc_main$r);
   delete app._context.components.ExternalLinkIcon;
-  app.component("ExternalLinkIcon", _sfc_main$o);
+  app.component("ExternalLinkIcon", _sfc_main$q);
   app.component("NavbarSearch", () => {
     const SearchComponent = app.component("Docsearch") || app.component("SearchBox");
     if (SearchComponent) {
@@ -901,6 +902,8 @@ const clientAppSetups = [
 const routeItems = [
   ["v-22a39d25", "/about.html", { "title": "" }, ["/about", "/about.md"]],
   ["v-8daa1a0e", "/", { "title": "" }, ["/index.html", "/README.md"]],
+  ["v-366bcf6c", "/scripts/powershell/1.html", { "title": "" }, ["/scripts/powershell/1", "/scripts/powershell/1.md"]],
+  ["v-155713b2", "/scripts/shell/1.html", { "title": "" }, ["/scripts/shell/1", "/scripts/shell/1.md"]],
   ["v-3706649a", "/404.html", { "title": "" }, ["/404"]]
 ];
 const pagesRoutes = routeItems.reduce((result, [name, path, meta, redirects]) => {
@@ -1003,24 +1006,24 @@ var _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$n = {};
-function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
+const _sfc_main$p = {};
+function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs) {
   _push(`<!--[--><h2 id="\u5173\u4E8E" tabindex="-1"><a class="header-anchor" href="#\u5173\u4E8E" aria-hidden="true">#</a> \u5173\u4E8E</h2><p>\u7231\u751F\u6D3B, \u7231\u5C0F\u82B3! \u751F\u547D\u5728\u4E8E\u6298\u817E, \u751F\u547D\u4E0D\u606F, \u6298\u817E\u4E0D\u6B62!</p><h3 id="_2\u5373\u6807\u9898" tabindex="-1"><a class="header-anchor" href="#_2\u5373\u6807\u9898" aria-hidden="true">#</a> 2\u5373\u6807\u9898</h3><h4 id="_3\u5373\u6807\u9898" tabindex="-1"><a class="header-anchor" href="#_3\u5373\u6807\u9898" aria-hidden="true">#</a> 3\u5373\u6807\u9898</h4><h3 id="_2\u5373\u6807\u9898-1" tabindex="-1"><a class="header-anchor" href="#_2\u5373\u6807\u9898-1" aria-hidden="true">#</a> 2\u5373\u6807\u9898</h3><h3 id="_2\u5373\u6807\u9898-2" tabindex="-1"><a class="header-anchor" href="#_2\u5373\u6807\u9898-2" aria-hidden="true">#</a> 2\u5373\u6807\u9898</h3><!--]-->`);
 }
-const _sfc_setup$n = _sfc_main$n.setup;
-_sfc_main$n.setup = (props, ctx) => {
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/about.html.vue");
-  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
 };
-var about_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$3]]);
+var about_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$5]]);
 var about_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": about_html$1
 });
-const _sfc_main$m = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+const _sfc_main$o = {};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
   const _component_ExternalLinkIcon = vue.resolveComponent("ExternalLinkIcon");
   _push(`<!--[--><h3 id="\u672C\u535A\u5BA2\u642D\u5EFA\u53C2\u8003\u5982\u4E0B\u6559\u7A0B" tabindex="-1"><a class="header-anchor" href="#\u672C\u535A\u5BA2\u642D\u5EFA\u53C2\u8003\u5982\u4E0B\u6559\u7A0B" aria-hidden="true">#</a> \u672C\u535A\u5BA2\u642D\u5EFA\u53C2\u8003\u5982\u4E0B\u6559\u7A0B</h3><p>VuePress \u5B98\u7F51: <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">https://v2.vuepress.vuejs.org/zh/`);
   _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
@@ -1028,17 +1031,49 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   _push(serverRenderer.ssrRenderComponent(_component_ExternalLinkIcon, null, null, _parent));
   _push(`</a></p><!--]-->`);
 }
-const _sfc_setup$m = _sfc_main$m.setup;
-_sfc_main$m.setup = (props, ctx) => {
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
   const ssrContext = vue.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/index.html.vue");
-  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
-var index_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$2]]);
+var index_html$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$4]]);
 var index_html$2 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": index_html$1
+});
+const _sfc_main$n = {};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h3 id="powershell" tabindex="-1"><a class="header-anchor" href="#powershell" aria-hidden="true">#</a> powershell</h3><p>powershell</p><!--]-->`);
+}
+const _sfc_setup$n = _sfc_main$n.setup;
+_sfc_main$n.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/scripts/powershell/1.html.vue");
+  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+};
+var _1_html$4 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$3]]);
+var _1_html$5 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": _1_html$4
+});
+const _sfc_main$m = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--><h3 id="shell" tabindex="-1"><a class="header-anchor" href="#shell" aria-hidden="true">#</a> shell</h3><p>shell</p><!--]-->`);
+}
+const _sfc_setup$m = _sfc_main$m.setup;
+_sfc_main$m.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("../pages/scripts/shell/1.html.vue");
+  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+};
+var _1_html$2 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$2]]);
+var _1_html$3 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": _1_html$2
 });
 const _sfc_main$l = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
@@ -1055,7 +1090,7 @@ var _404_html$2 = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": _404_html$1
 });
-const data$2 = {
+const data$4 = {
   "key": "v-22a39d25",
   "path": "/about.html",
   "title": "",
@@ -1106,9 +1141,9 @@ const data$2 = {
 var about_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  data: data$2
+  data: data$4
 });
-const data$1 = {
+const data$3 = {
   "key": "v-8daa1a0e",
   "path": "/",
   "title": "",
@@ -1157,6 +1192,70 @@ const data$1 = {
   "filePathRelative": "README.md"
 };
 var index_html = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$3
+});
+const data$2 = {
+  "key": "v-366bcf6c",
+  "path": "/scripts/powershell/1.html",
+  "title": "",
+  "lang": "zh-CN",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 3,
+      "title": "powershell",
+      "slug": "powershell",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 1642234184e3,
+    "contributors": [
+      {
+        "name": "JackPeng",
+        "email": "okeyear@163.com",
+        "commits": 1
+      }
+    ]
+  },
+  "filePathRelative": "scripts/powershell/1.md"
+};
+var _1_html$1 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  data: data$2
+});
+const data$1 = {
+  "key": "v-155713b2",
+  "path": "/scripts/shell/1.html",
+  "title": "",
+  "lang": "zh-CN",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 3,
+      "title": "shell",
+      "slug": "shell",
+      "children": []
+    }
+  ],
+  "git": {
+    "updatedTime": 1642234184e3,
+    "contributors": [
+      {
+        "name": "JackPeng",
+        "email": "okeyear@163.com",
+        "commits": 1
+      }
+    ]
+  },
+  "filePathRelative": "scripts/shell/1.md"
+};
+var _1_html = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   data: data$1

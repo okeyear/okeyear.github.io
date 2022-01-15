@@ -1,8 +1,8 @@
 module.exports = {
-  base: "/",
+  //   base: "/",
   // 站点配置
-  lang: "zh-CN",
-  title: "你好， VuePress ！",
+  //   lang: "zh-CN",
+  //   title: "你好， VuePress ！",
   description: "这是我的第一个 VuePress 站点",
 
   // 主题和它的配置
@@ -31,9 +31,9 @@ module.exports = {
         link: "/about",
       },
     ],
-    sidebarDepth: 5,
+    // sidebarDepth: 5,
     // sidebar: "auto",
     // 第一个空的代表默认的导航配置, 其实就是auto的 markdown的TOC, 其他是自己要加的比如home,比如about
-    sidebar: ["", "about"],
+    sidebar: ["", "/about"],
   },
 };

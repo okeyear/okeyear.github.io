@@ -1,0 +1,1 @@
+const e={key:"v-155713b2",path:"/scripts/shell/1.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"shell",slug:"shell",children:[]}],git:{updatedTime:1642234184e3,contributors:[{name:"JackPeng",email:"okeyear@163.com",commits:1}]},filePathRelative:"scripts/shell/1.md"};export{e as data};
