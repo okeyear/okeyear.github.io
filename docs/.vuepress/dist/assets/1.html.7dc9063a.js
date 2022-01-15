@@ -1,1 +1,0 @@
-import{o as a,a as r,F as s,b as e,e as t}from"./app.38f1c9ce.js";import{_ as c}from"./plugin-vue_export-helper.21dcd24c.js";const l={},o=e("h3",{id:"shell",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#shell","aria-hidden":"true"},"#"),t(" shell")],-1),n=e("p",null,"shell",-1);function _(d,h){return a(),r(s,null,[o,n],64)}var f=c(l,[["render",_]]);export{f as default};

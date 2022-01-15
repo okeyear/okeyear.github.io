@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/okeyear/okeyear.github.io/issues"
   },
-  "homepage": "https://github.com/okeyear/okeyear.github.io#readme"
+  "homepage": "https://github.com/okeyear/okeyear.github.io#readme",
+  "dependencies": {
+    "@vueuse/core": "^7.5.3"
+  }
 }
