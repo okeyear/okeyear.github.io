@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/",
   // 站点配置
   lang: "zh-CN",
   title: "你好， VuePress ！",
