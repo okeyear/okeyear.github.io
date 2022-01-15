@@ -25,18 +25,6 @@ module.exports = {
           },
         ],
       },
-      // 控制元素何时被激活
-      {
-        text: "Group 2",
-        children: [
-          {
-            text: "Always active",
-            link: "/",
-            // 该元素将一直处于激活状态
-            activeMatch: "/",
-          },
-        ],
-      },
       // NavbarItem
       {
         text: "About",
