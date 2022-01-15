@@ -46,6 +46,8 @@ module.exports = {
       },
     ],
     sidebarDepth: 5,
-    sidebar: "auto",
+    // sidebar: "auto",
+    // 第一个空的代表默认的导航配置, 其实就是auto的 markdown的TOC, 其他是自己要加的比如home,比如about
+    sidebar: ["", "about", "about1"],
   },
 };
