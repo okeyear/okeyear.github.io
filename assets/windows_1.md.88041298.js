@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./app.6686badb.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"network/1.md"}',a={};function o(c,n,s,_,p,i){return r(),t("div")}var l=e(a,[["render",o]]);export{f as __pageData,l as default};

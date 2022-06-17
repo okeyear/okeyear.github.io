@@ -1,1 +1,0 @@
-const e={key:"v-366bcf6c",path:"/scripts/powershell/1.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:3,title:"powershell",slug:"powershell",children:[]}],git:{updatedTime:1642234184e3,contributors:[{name:"JackPeng",email:"okeyear@163.com",commits:1}]},filePathRelative:"scripts/powershell/1.md"};export{e as data};
