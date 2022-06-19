@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker常用镜像 mysql | Hello World</title>
+    <meta name="description" content="okeyear blog">
+    <link rel="stylesheet" href="/assets/style.d8cc85cb.css">
+    <link rel="modulepreload" href="/assets/chunks/AlgoliaSearchBox.581e156b.js">
+    <link rel="modulepreload" href="/assets/app.1b5e2894.js">
+    <link rel="modulepreload" href="/assets/cloudnative_docker_docker-image-mysql.md.6d099375.lean.js">
+    
+    <meta name="twitter:title" content="docker常用镜像 mysql | Hello World">
+  <meta property="og:title" content="docker常用镜像 mysql | Hello World">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="Hello World, back to home" data-v-675d8756 data-v-cc01ef16><!----> Hello World</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><nav class="nav-links" data-v-675d8756 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>Home <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>Linux</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/linux/command/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>command</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/linux/rootfs/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>rootfs</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/linux/service/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>service</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>CloudNative</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item active" href="/cloudnative/docker/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>docker</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/cloudnative/k8s/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>k8s</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/cloudnative/vmware/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>vmware</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/cloudnative/terraform/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>terraform</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/windows/" data-v-b8818f8c>Windows <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/netwok/" data-v-b8818f8c>Netwok <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/shell/" data-v-b8818f8c>Shell <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/powershell/" data-v-b8818f8c>PowerShell <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>Python</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/python/base/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>base</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/python/module/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>module</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>Web</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/html/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>HTML</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/css/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>CSS</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/javascript/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>JavaScript</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/es6/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>ES6</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/typescript/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>TypeScript</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/vue/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>Vue</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/vscode/" data-v-b8818f8c>VSCode <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>Game</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/game/poe/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>POE</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/game/d3/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>D3</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/game/ahk/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>AHK</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/about/" data-v-b8818f8c>About <!----></a></div></div><!--]--><!----><!----></nav></div><!--[--><!--[--><div class="algolia-search-box" id="docsearch"></div><!--]--><!--]--></header><aside class="sidebar" data-v-83e92a68><nav class="nav-links nav" data-v-83e92a68 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>Home <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>Linux</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/linux/command/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>command</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/linux/rootfs/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>rootfs</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/linux/service/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>service</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>CloudNative</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item active" href="/cloudnative/docker/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>docker</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/cloudnative/k8s/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>k8s</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/cloudnative/vmware/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>vmware</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/cloudnative/terraform/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>terraform</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/windows/" data-v-b8818f8c>Windows <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/netwok/" data-v-b8818f8c>Netwok <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/shell/" data-v-b8818f8c>Shell <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/powershell/" data-v-b8818f8c>PowerShell <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>Python</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/python/base/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>base</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/python/module/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>module</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>Web</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/html/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>HTML</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/css/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>CSS</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/javascript/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>JavaScript</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/es6/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>ES6</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/typescript/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>TypeScript</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/web/vue/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>Vue</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/vscode/" data-v-b8818f8c>VSCode <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-dropdown-link" data-v-eab3edfe data-v-56bf3a3f><button class="button" data-v-56bf3a3f><span class="button-text" data-v-56bf3a3f>Game</span><span class="right button-arrow" data-v-56bf3a3f></span></button><ul class="dialog" data-v-56bf3a3f><!--[--><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/game/poe/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>POE</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/game/d3/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>D3</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><li class="dialog-item" data-v-56bf3a3f><div class="nav-dropdown-link-item" data-v-56bf3a3f data-v-bbc27490><a class="item" href="/game/ahk/" data-v-bbc27490><span class="arrow" data-v-bbc27490></span><span class="text" data-v-bbc27490>AHK</span><span class="icon" data-v-bbc27490><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/about/" data-v-b8818f8c>About <!----></a></div></div><!--]--><!----><!----></nav><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#测试版">测试版</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#实战版本-单机版本">实战版本(单机版本)</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#实战版本-主从版本">实战版本(主从版本)</a><!----></li><!--]--></ul><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h1 id="docker常用镜像-mysql" tabindex="-1">docker常用镜像 mysql <a class="header-anchor" href="#docker常用镜像-mysql" aria-hidden="true">#</a></h1><p>网址: <a href="https://hub.docker.com/_/mysql" target="_blank" rel="noopener noreferrer">https://hub.docker.com/_/mysql</a></p><h2 id="测试版" tabindex="-1">测试版 <a class="header-anchor" href="#测试版" aria-hidden="true">#</a></h2><div class="language-bash"><pre><code><span class="token function">docker</span> run --name some-mysql <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span>ChangeMe@123 <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql root用户密码</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -d mysql:5.7
+</code></pre></div><p>测试版本问题</p><p><a href="https://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html" target="_blank" rel="noopener noreferrer">https://dev.mysql.com/doc/refman/5.7/en/charset-unicode-sets.html</a></p><div class="language-bash"><pre><code><span class="token number">1</span>. 字符集 SHOW VARIABLES LIKE <span class="token string">&#39;character%&#39;</span><span class="token punctuation">;</span>  
+<span class="token number">2</span>. 数据持久化 -- 数据卷
+
+
+</code></pre></div><h2 id="实战版本-单机版本" tabindex="-1">实战版本(单机版本) <a class="header-anchor" href="#实战版本-单机版本" aria-hidden="true">#</a></h2><div class="language-bash"><pre><code><span class="token comment"># Step 1</span>
+<span class="token comment"># 新建my.cnf, 通过数据卷同步给mysql容器实例</span>
+<span class="token function">mkdir</span> -pv /data/mysql/conf.d
+<span class="token function">tee</span> /data/mysql/conf.d/my.cnf <span class="token operator">&lt;&lt;-</span><span class="token string">EOF
+[client]
+default-character-set=utf8
+[mysqld]
+# init_connect=&#39;SET collation_connection = utf8_unicode_ci&#39;
+# init_connect=&#39;SET NAMES utf8&#39;
+character-set-server=utf8
+collation-server=utf8_unicode_ci
+EOF</span>
+
+<span class="token comment"># Step 2</span>
+<span class="token comment"># 启动mysql实例, 查看字符编码</span>
+<span class="token function">docker</span> run -d --name some-mysql <span class="token punctuation">\</span>
+    -p <span class="token number">3306</span>:3306 <span class="token variable"><span class="token variable">`</span><span class="token comment"># 主机端口不要冲突</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    --restart<span class="token operator">=</span>always <span class="token punctuation">\</span>
+    --privileged<span class="token operator">=</span>true <span class="token punctuation">\</span>
+    -v /data/mysql/log:/var/log/mysql <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql log 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -v /data/mysql/data:/var/lib/mysql <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql 数据 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -v /data/mysql/conf.d:/etc/mysql/conf.d <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql 配置 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span>ChangeMe@123 <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql root用户密码</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    mysql:5.7
+
+
+<span class="token comment"># 如果新建一个数据库并授权,可选使用如下方式</span>
+-e <span class="token assign-left variable">MYSQL_DATABASE</span><span class="token operator">=</span>zabbix <span class="token punctuation">\</span>
+-e <span class="token assign-left variable">MYSQL_USER</span><span class="token operator">=</span>zabbix <span class="token punctuation">\</span>
+-e <span class="token assign-left variable">MYSQL_PASSWORD</span><span class="token operator">=</span>zabbix <span class="token punctuation">\</span>
+
+<span class="token comment"># Step 3</span>
+<span class="token comment"># 进入容器, 查看字符集</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it some-mysql <span class="token function">bash</span>
+mysql -uroot -pChangeMe@123
+SHOW VARIABLES LIKE <span class="token string">&#39;character%&#39;</span><span class="token punctuation">;</span>  
+<span class="token comment"># 建库,建表,测试中文utf8插入</span>
+</code></pre></div><h2 id="实战版本-主从版本" tabindex="-1">实战版本(主从版本) <a class="header-anchor" href="#实战版本-主从版本" aria-hidden="true">#</a></h2><div class="language-bash"><pre><code><span class="token comment">## Master 3307</span>
+<span class="token comment"># Step 1 新建Master实例</span>
+<span class="token function">docker</span> run -d --name mysql-master01 <span class="token punctuation">\</span>
+    -p <span class="token number">3307</span>:3306 <span class="token variable"><span class="token variable">`</span><span class="token comment"># 主机端口不要冲突</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    --restart<span class="token operator">=</span>always <span class="token punctuation">\</span>
+    --privileged<span class="token operator">=</span>true <span class="token punctuation">\</span>
+    -v /data/mysql-master/log:/var/log/mysql <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql log 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -v /data/mysql-master/data:/var/lib/mysql <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql 数据 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -v /data/mysql-master/conf.d:/etc/mysql/conf.d <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql 配置 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span>ChangeMe@123 <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql root用户密码</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    mysql:5.7
+
+<span class="token comment"># check</span>
+<span class="token function">docker</span> <span class="token function">ps</span>
+
+<span class="token comment"># Step 2 Master实例的配置文件</span>
+<span class="token function">tee</span> /data/mysql-master/conf.d/my.cnf <span class="token operator">&lt;&lt;-</span><span class="token string">EOF
+[client]
+default-character-set=utf8 # 字符集
+[mysqld]
+server_id=01 # 同一局域网内ID需要唯一
+binlog-ignore-db=mysql # 指定不需要同步的数据库
+log-bin=mall-mysql-bin # 开启二进制日志功能
+binlog_cache_size=10M # 二进制日志使用内存大小(事务)
+binlog_format=mixed # 设置使用的二进制日志格式 mixed statement row
+expire_logs_days=14 # 二进制日志过期清理时间, 默认值0,表示不自动清理
+# 跳过主从复制中遇到的错误或指定类型错误, 避免slave端复制中断 
+# 1062错误是指一些主键重复 1032错误是因为主从数据库数据不一致
+slave_skip_errors=1062 
+character-set-server=utf8 # 字符集
+collation-server=utf8_unicode_ci # 字符集
+EOF</span>
+
+<span class="token comment"># Step 3 修改完重启master实例</span>
+<span class="token function">docker</span> restart mysql-master01
+<span class="token function">docker</span> <span class="token function">ps</span>
+
+<span class="token comment"># Step 4 进入master容器</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it mysql-master01 <span class="token function">bash</span>
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;show master status&quot;</span><span class="token punctuation">;</span> 
+
+<span class="token comment"># Step 5 master数据库创建同步用的用户</span>
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;CREATE USER &#39;slave&#39;@&#39;%&#39; IDENTIFIED BY &#39;abcd_123&#39;;&quot;</span><span class="token punctuation">;</span> 
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;GRANT REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO &#39;slave&#39;@&#39;%&#39;;&quot;</span><span class="token punctuation">;</span> 
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;SELECT Host,User FROM mysql.user;&quot;</span>
+
+<span class="token comment">## Slave 3308</span>
+<span class="token comment"># Step 6 新建Slave实例</span>
+<span class="token function">docker</span> run -d --name mysql-slave01 <span class="token punctuation">\</span>
+    -p <span class="token number">3308</span>:3306 <span class="token variable"><span class="token variable">`</span><span class="token comment"># 主机端口不要冲突</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    --restart<span class="token operator">=</span>always <span class="token punctuation">\</span>
+    --privileged<span class="token operator">=</span>true <span class="token punctuation">\</span>
+    -v /data/mysql-slave/log:/var/log/mysql <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql log 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -v /data/mysql-slave/data:/var/lib/mysql <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql 数据 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -v /data/mysql-slave/conf.d:/etc/mysql/conf.d <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql 配置 目录</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    -e <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span>ChangeMe@123 <span class="token variable"><span class="token variable">`</span><span class="token comment"># mysql root用户密码</span><span class="token variable">`</span></span> <span class="token punctuation">\</span>
+    mysql:5.7
+
+<span class="token comment"># check</span>
+<span class="token function">docker</span> <span class="token function">ps</span>
+
+<span class="token comment"># Step 7 slave实例的配置文件</span>
+<span class="token function">tee</span> /data/mysql-slave/conf.d/my.cnf <span class="token operator">&lt;&lt;-</span><span class="token string">EOF
+[client]
+default-character-set=utf8 # 字符集
+[mysqld]
+server_id=101 # 同一局域网内ID需要唯一
+binlog-ignore-db=mysql # 指定不需要同步的数据库
+log-bin=mall-mysql-slave01-bin # 开启二进制日志功能, 以备slave作为其他数据库实例的master时候使用
+binlog_cache_size=10M # 二进制日志使用内存大小(事务)
+binlog_format=mixed # 设置使用的二进制日志格式 mixed statement row
+expire_logs_days=14 # 二进制日志过期清理时间, 默认值0,表示不自动清理
+# 跳过主从复制中遇到的错误或指定类型错误, 避免slave端复制中断 
+# 1062错误是指一些主键重复 1032错误是因为主从数据库数据不一致
+slave_skip_errors=1062 
+relay_log=mall-mysql-relay-bin # relay_log配置中继日志
+log_slave_updates=1 # slave将复制事件日写进自己的二进制日志
+read_only=1 # slave设置为只读,具有super权限的用户除外
+character-set-server=utf8 # 字符集
+collation-server=utf8_unicode_ci # 字符集
+EOF</span>
+
+
+<span class="token comment"># Step 8 修改完重启slave实例</span>
+<span class="token function">docker</span> restart mysql-slave01
+<span class="token function">docker</span> <span class="token function">ps</span>
+
+<span class="token comment"># Step 9 进入slave容器</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it mysql-slave01 <span class="token function">bash</span>
+<span class="token comment"># 执行同步语句</span>
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;change master to master_host=&#39;10.10.10.101&#39;,master_port=3307,master_user=&#39;slave&#39;,master_password=&#39;abcd_123&#39;,master_log_file=&#39;mall-mysql-bin.000001&#39; ,master_log_pos=154, master_connect_retry=30;&quot;</span>   
+<span class="token comment"># 执行前状态为No</span>
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;show slave status \G;&quot;</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&#39;Slave_.*_Running&#39;</span> 
+<span class="token comment"># 执行</span>
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;start slave;&quot;</span>
+<span class="token comment"># 执行后状态为Yes</span>
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;show slave status \G;&quot;</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&#39;Slave_.*_Running&#39;</span> 
+
+<span class="token comment"># Step 10 进入master容器查看同步状态</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it mysql-master01 <span class="token function">bash</span>
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;show master status \G;&quot;</span>  
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;show databases;&quot;</span> 
+
+<span class="token comment"># Step 11 master数据库写入测试</span>
+<span class="token comment"># 建库-使用库-建表-插入数据</span>
+<span class="token comment"># 官方测试数据库github网址：https://github.com/datacharmer/test_db</span>
+<span class="token function">wget</span> https://github.com/datacharmer/test_db/releases/download/v1.0.7/test_db-1.0.7.tar.gz
+<span class="token function">docker</span> <span class="token function">cp</span> test_db-1.0.7.tar.gz mysql-master01:/tmp/
+
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it mysql-master01 <span class="token function">bash</span>
+mysql uroot -pChangeMe@123 <span class="token operator">&lt;</span> employees.sql
+mysql uroot -pChangeMe@123 <span class="token operator">&lt;</span> employees_partitioned.sql
+<span class="token builtin class-name">cd</span> /tmp
+<span class="token function">tar</span> -xf test_db-1.0.7.tar.gz
+<span class="token builtin class-name">cd</span> test_db
+mysql -uroot -pChangeMe@123 <span class="token operator">&lt;</span> employees.sql
+mysql -uroot -pChangeMe@123 <span class="token operator">&lt;</span> employees_partitioned.sql
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;show databases;&quot;</span> 
+
+<span class="token comment"># Step 12 slave数据库读取测试</span>
+<span class="token comment"># 从机查看库,查看表,查询表记录</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it mysql-slave01 <span class="token function">bash</span>
+mysql -uroot -pChangeMe@123 -e <span class="token string">&quot;show databases;&quot;</span> 
+
+</code></pre></div></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-07c132fc><div class="edit" data-v-07c132fc><div class="edit-link" data-v-07c132fc data-v-1ed99556><!----></div></div><div class="updated" data-v-07c132fc><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"cloudnative_docker_docker-dockerfile.md\":\"4925ec37\",\"cloudnative_docker_docker-container.md\":\"5ee53bff\",\"cloudnative_docker_docker-image-mysql.md\":\"6d099375\",\"cloudnative_docker_docker-image-tomcat.md\":\"f80b5282\",\"cloudnative_docker_docker-image.md\":\"ba22e7a6\",\"cloudnative_docker_docker-install.md\":\"51eac041\",\"cloudnative_docker_docker-registry.md\":\"e4d4ae79\",\"cloudnative_docker_docker-volume.md\":\"8a5aed54\",\"cloudnative_docker_index.md\":\"852732d2\",\"cloudnative_k8s_index.md\":\"bd53bffa\",\"cloudnative_terraform_index.md\":\"21d60000\",\"cloudnative_vmware_index.md\":\"281b04b2\",\"game_ahk_index.md\":\"ad30afa7\",\"game_d3_index.md\":\"e8cd897c\",\"game_poe_index.md\":\"a39c290d\",\"index.md\":\"b1c5988d\",\"linux_command_index.md\":\"72dcb0b5\",\"linux_command_jjj_join.md\":\"7702da87\",\"linux_command_nnn_nc.md\":\"8e662374\",\"linux_index.md\":\"98b8772d\",\"linux_rootfs_index.md\":\"27cfefb3\",\"linux_service_index.md\":\"2e704dc3\",\"linux_service_sss_ssh-tunnel.md\":\"1e8a24dd\",\"linux_service_sss_ssh.md\":\"f96d1cc9\",\"network_index.md\":\"69f782aa\",\"powershell_index.md\":\"0701d171\",\"python_base_index.md\":\"36475a10\",\"python_index.md\":\"928bee80\",\"python_module_index.md\":\"3fe9e242\",\"shell_index.md\":\"53acbcaa\",\"vscode_index.md\":\"34286ca6\",\"web_css_index.md\":\"735ced74\",\"web_es6_index.md\":\"dc13ef4e\",\"web_html_index.md\":\"66f12a69\",\"web_index.md\":\"150c74b5\",\"web_javascript_index.md\":\"e1c3c7a2\",\"web_typescript_index.md\":\"8ba6816a\",\"web_vue_index.md\":\"ba01f393\",\"windows_index.md\":\"5afcb7b6\",\"windows_software.md\":\"2e593c66\"}")</script>
+    <script type="module" async src="/assets/app.1b5e2894.js"></script>
+    
+  </body>
+</html>
