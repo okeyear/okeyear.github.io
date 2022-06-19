@@ -6,9 +6,9 @@
     <title>SSH Tunnel端口转发 | Hello World</title>
     <meta name="description" content="okeyear blog">
     <link rel="stylesheet" href="/assets/style.d8cc85cb.css">
-    <link rel="modulepreload" href="/assets/chunks/AlgoliaSearchBox.28bcbe92.js">
-    <link rel="modulepreload" href="/assets/app.7c3fbd98.js">
-    <link rel="modulepreload" href="/assets/linux_service_sss_ssh-tunnel.md.a4d02302.lean.js">
+    <link rel="modulepreload" href="/assets/chunks/AlgoliaSearchBox.581e156b.js">
+    <link rel="modulepreload" href="/assets/app.1b5e2894.js">
+    <link rel="modulepreload" href="/assets/linux_service_sss_ssh-tunnel.md.1e8a24dd.lean.js">
     
     <meta name="twitter:title" content="SSH Tunnel端口转发 | Hello World">
   <meta property="og:title" content="SSH Tunnel端口转发 | Hello World">
@@ -28,8 +28,8 @@ RemoteForward local-IP:local-port target-ip:target-port
 </code></pre></div><h2 id="两级跳板" tabindex="-1">两级跳板 <a class="header-anchor" href="#两级跳板" aria-hidden="true">#</a></h2><p>端口转发可以有多级，比如新建两个 SSH 隧道，第一个隧道转发给第二个隧道，第二个隧道才能访问目标服务器。</p><p>首先，在本机新建第一级隧道。</p><div class="language-"><pre><code>$ ssh -L 7999:localhost:2999 tunnel1-host
 </code></pre></div><p>上面命令在本地<code>7999</code>端口与<code>tunnel1-host</code>之间建立一条隧道，隧道的出口是<code>tunnel1-host</code>的<code>localhost:2999</code>，也就是<code>tunnel1-host</code>收到本机的请求以后，转发给自己的<code>2999</code>端口。</p><p>然后，在第一台跳板机（<code>tunnel1-host</code>）执行下面的命令，新建第二级隧道。</p><div class="language-"><pre><code>$ ssh -L 2999:target-host:7999 tunnel2-host -N
 </code></pre></div><p>上面命令将第一台跳板机<code>tunnel1-host</code>的<code>2999</code>端口，通过第二台跳板机<code>tunnel2-host</code>，连接到目标服务器<code>target-host</code>的<code>7999</code>端口。</p><p>最终效果就是，访问本机的<code>7999</code>端口，就会转发到<code>target-host</code>的<code>7999</code>端口。</p></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-07c132fc><div class="edit" data-v-07c132fc><div class="edit-link" data-v-07c132fc data-v-1ed99556><!----></div></div><div class="updated" data-v-07c132fc><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"cloudnative_docker_index.md\":\"17aceb0f\",\"cloudnative_k8s_index.md\":\"9bb30638\",\"cloudnative_terraform_index.md\":\"d7c839b1\",\"cloudnative_vmware_index.md\":\"6a5cff9a\",\"game_ahk_index.md\":\"805e74b0\",\"game_d3_index.md\":\"3859ee7e\",\"game_poe_index.md\":\"33db1ade\",\"index.md\":\"5283a6e8\",\"linux_command_index.md\":\"fe7e4354\",\"linux_command_jjj_join.md\":\"b3aec8a3\",\"linux_command_nnn_nc.md\":\"6a89769a\",\"linux_index.md\":\"71d58b40\",\"linux_rootfs_index.md\":\"e5285904\",\"linux_service_index.md\":\"324a74b4\",\"linux_service_sss_ssh-tunnel.md\":\"a4d02302\",\"linux_service_sss_ssh.md\":\"7e8d10ae\",\"network_index.md\":\"e41f4719\",\"powershell_index.md\":\"19253df2\",\"python_base_index.md\":\"0a2a3e1d\",\"python_index.md\":\"df62b47f\",\"python_module_index.md\":\"d4c3059e\",\"shell_index.md\":\"0494b642\",\"vscode_index.md\":\"b653bede\",\"web_css_index.md\":\"6c6df2e9\",\"web_es6_index.md\":\"11b0c71a\",\"web_html_index.md\":\"e7b576ba\",\"web_index.md\":\"d1f445a2\",\"web_javascript_index.md\":\"e6612a57\",\"web_typescript_index.md\":\"0c53ac75\",\"web_vue_index.md\":\"7d72b585\",\"windows_index.md\":\"38a1d7d3\",\"windows_software.md\":\"b686b018\"}")</script>
-    <script type="module" async src="/assets/app.7c3fbd98.js"></script>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"cloudnative_docker_index.md\":\"66224f70\",\"cloudnative_k8s_index.md\":\"dcfb8fce\",\"cloudnative_terraform_index.md\":\"85257da5\",\"cloudnative_vmware_index.md\":\"ad738415\",\"game_ahk_index.md\":\"9568bb31\",\"game_d3_index.md\":\"e8cd897c\",\"game_poe_index.md\":\"a39c290d\",\"index.md\":\"b1c5988d\",\"linux_command_index.md\":\"72dcb0b5\",\"linux_command_jjj_join.md\":\"7702da87\",\"linux_command_nnn_nc.md\":\"8e662374\",\"linux_index.md\":\"98b8772d\",\"linux_rootfs_index.md\":\"27cfefb3\",\"linux_service_index.md\":\"2e704dc3\",\"linux_service_sss_ssh-tunnel.md\":\"1e8a24dd\",\"linux_service_sss_ssh.md\":\"f96d1cc9\",\"network_index.md\":\"69f782aa\",\"powershell_index.md\":\"0701d171\",\"python_base_index.md\":\"36475a10\",\"python_index.md\":\"1dd4674f\",\"python_module_index.md\":\"3fe9e242\",\"shell_index.md\":\"53acbcaa\",\"vscode_index.md\":\"34286ca6\",\"web_css_index.md\":\"3991e616\",\"web_es6_index.md\":\"ae85dad8\",\"web_html_index.md\":\"66f12a69\",\"web_index.md\":\"0e740f63\",\"web_javascript_index.md\":\"c2babef3\",\"web_typescript_index.md\":\"4ea97f8e\",\"web_vue_index.md\":\"adb648e7\",\"windows_index.md\":\"5afcb7b6\",\"windows_software.md\":\"2e593c66\"}")</script>
+    <script type="module" async src="/assets/app.1b5e2894.js"></script>
     
   </body>
 </html>
