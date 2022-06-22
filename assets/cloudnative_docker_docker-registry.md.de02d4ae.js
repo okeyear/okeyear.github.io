@@ -14,7 +14,7 @@ import{_ as n,c as s,o as a,a as e}from"./app.3a9754ab.js";const g='{"title":"do
 <span class="token comment">#     CentOS7\u4E2D\u7684\u5B89\u5168\u6A21\u5757selinux\u628A\u6743\u9650\u7981\u6389\u4E86\uFF0C\u53C2\u6570\u7ED9\u5BB9\u5668\u52A0\u7279\u6743\uFF0C</span>
 <span class="token comment">#     \u4E0D\u52A0\u4E0A\u4F20\u955C\u50CF\u4F1A\u62A5\u6743\u9650\u9519\u8BEF(OSError: [Errno 13] Permission denied: \u2018/tmp/registry/repositories/liibrary\u2019)</span>
 <span class="token comment">#     \u6216\u8005\uFF08Received unexpected HTTP status: 500 Internal Server Error\uFF09\u9519\u8BEF</span>
-</code></pre></div><h2 id="\u4E0A\u4F20\u955C\u50CF\u5230\u79C1\u6709\u4ED3\u5E93" tabindex="-1">\u4E0A\u4F20\u955C\u50CF\u5230\u79C1\u6709\u4ED3\u5E93 <a class="header-anchor" href="#\u4E0A\u4F20\u955C\u50CF\u5230\u79C1\u6709\u4ED3\u5E93" aria-hidden="true">#</a></h2><div class="language-bash"><pre><code><span class="token assign-left variable">registry_ip</span><span class="token operator">=</span><span class="token string">&#39;10.10.10.101&#39;</span>
+</code></pre></div><h2 id="\u4E0A\u4F20\u955C\u50CF\u5230\u79C1\u6709\u4ED3\u5E93" tabindex="-1">\u4E0A\u4F20\u955C\u50CF\u5230\u79C1\u6709\u4ED3\u5E93 <a class="header-anchor" href="#\u4E0A\u4F20\u955C\u50CF\u5230\u79C1\u6709\u4ED3\u5E93" aria-hidden="true">#</a></h2><p><a href="https://docs.docker.com/engine/reference/commandline/commit/" target="_blank" rel="noopener noreferrer">https://docs.docker.com/engine/reference/commandline/commit/</a></p><div class="language-bash"><pre><code><span class="token assign-left variable">registry_ip</span><span class="token operator">=</span><span class="token string">&#39;10.10.10.101&#39;</span>
 <span class="token comment"># Step 2:</span>
 <span class="token comment"># \u5BF9\u955C\u50CF\u505A\u4E00\u4E9B\u4FEE\u6539</span>
 <span class="token function">docker</span> run -it ubuntu <span class="token function">bash</span>
@@ -24,6 +24,13 @@ import{_ as n,c as s,o as a,a as e}from"./app.3a9754ab.js";const g='{"title":"do
 <span class="token comment"># docker commit \u955C\u50CF</span>
 <span class="token function">docker</span> commit -m<span class="token operator">=</span><span class="token string">&quot;add mirrors, install vim net-tools&quot;</span> -a<span class="token operator">=</span><span class="token string">&#39;okeyear@163.com&#39;</span> 2263bed44655 myubuntu:1.0
 <span class="token function">docker</span> images
+<span class="token comment"># docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]</span>
+<span class="token comment"># OPTIONS\u8BF4\u660E\uFF1A</span>
+<span class="token comment">#     -a :\u63D0\u4EA4\u7684\u955C\u50CF\u4F5C\u8005\uFF1B</span>
+<span class="token comment">#     -c :\u63D0\u4EA4\u65F6\u5019\u6267\u884C\u7684Dockerfile\u6307\u4EE4\uFF1B</span>
+<span class="token comment">#     -m :\u63D0\u4EA4\u65F6\u7684\u8BF4\u660E\u6587\u5B57\uFF1B</span>
+<span class="token comment">#     -p :\u5728commit\u65F6\uFF0C\u5C06\u5BB9\u5668\u6682\u505C\u3002</span>
+
 
 <span class="token comment"># Step 4: </span>
 <span class="token comment"># tag\u6807\u8BB0, \u4FEE\u6539\u6210\u7B26\u5408\u79C1\u670D\u89C4\u8303\u7684tag;   </span>
@@ -54,4 +61,4 @@ import{_ as n,c as s,o as a,a as e}from"./app.3a9754ab.js";const g='{"title":"do
 <span class="token comment"># \u4ECE\u4ED3\u5E93pull\u4E00\u4E2A</span>
 <span class="token function">docker</span> pull <span class="token variable">\${registry_ip}</span>:5000/myubuntu:1.0
 <span class="token function">docker</span> images
-</code></pre></div>`,9),p=[o];function c(r,i,l,m,k,u){return a(),s("div",null,p)}var h=n(t,[["render",c]]);export{g as __pageData,h as default};
+</code></pre></div>`,10),c=[o];function p(r,i,l,m,k,d){return a(),s("div",null,c)}var h=n(t,[["render",p]]);export{g as __pageData,h as default};
