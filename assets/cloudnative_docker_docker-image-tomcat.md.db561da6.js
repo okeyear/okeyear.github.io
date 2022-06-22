@@ -1,0 +1,5 @@
+import{_ as a,c as e,o as t,a as o}from"./app.3a9754ab.js";const k='{"title":"docker\u5E38\u7528\u955C\u50CF java tomcat","description":"","frontmatter":{},"headers":[],"relativePath":"cloudnative/docker/docker-image-tomcat.md"}',c={},r=o(`<h1 id="docker\u5E38\u7528\u955C\u50CF-java-tomcat" tabindex="-1">docker\u5E38\u7528\u955C\u50CF java tomcat <a class="header-anchor" href="#docker\u5E38\u7528\u955C\u50CF-java-tomcat" aria-hidden="true">#</a></h1><p>tomcat: <a href="https://hub.docker.com/_/tomcat" target="_blank" rel="noopener noreferrer">https://hub.docker.com/_/tomcat</a></p><div class="language-bash"><pre><code><span class="token comment"># \u9ED8\u8BA4\u770B\u4E0D\u5230\u9996\u9875, \u9996\u9875404</span>
+\u9ED8\u8BA4\u76EE\u5F55 /usr/local/tomcat 
+<span class="token comment"># webapps  \u521B\u5EFAROOT/index.html\u6216\u8005</span>
+<span class="token function">mv</span> webapps.dist webapps
+</code></pre></div>`,3),n=[r];function s(d,_,p,m,i,l){return t(),e("div",null,n)}var u=a(c,[["render",s]]);export{k as __pageData,u as default};

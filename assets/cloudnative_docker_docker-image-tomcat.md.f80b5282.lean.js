@@ -1,1 +1,0 @@
-import{_ as a,c as e,o as t,a as o}from"./app.1b5e2894.js";const k='{"title":"docker\u5E38\u7528\u955C\u50CF java tomcat","description":"","frontmatter":{},"headers":[],"relativePath":"cloudnative/docker/docker-image-tomcat.md"}',c={},r=o("",3),n=[r];function s(d,_,p,m,i,l){return t(),e("div",null,n)}var u=a(c,[["render",s]]);export{k as __pageData,u as default};

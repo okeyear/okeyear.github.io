@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as a,a as t}from"./app.3a9754ab.js";const h='{"title":"1","description":"","frontmatter":{},"headers":[],"relativePath":"linux/distro/alpine/alpine-install.md"}',p={},o=t("",2),e=[o];function c(l,u,i,k,r,m){return a(),s("div",null,e)}var g=n(p,[["render",c]]);export{h as __pageData,g as default};
