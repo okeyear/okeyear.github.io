@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.3a9754ab.js";const d='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"linux/service/ggg/gitlab-ce-install.md"}',r={};function s(c,n,o,i,l,_){return a(),t("div")}var f=e(r,[["render",s]]);export{d as __pageData,f as default};

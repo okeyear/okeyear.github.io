@@ -3,7 +3,7 @@ import{_ as n,c as s,o as a,a as e}from"./app.3a9754ab.js";const g='{"title":"do
 <span class="token function">docker</span> run -d -p <span class="token number">5000</span>:5000 <span class="token punctuation">\\</span>
     --restart<span class="token operator">=</span>always <span class="token punctuation">\\</span>
     --privileged<span class="token operator">=</span>true <span class="token punctuation">\\</span>
-    -v /opt/data/registry:/tmp/registry <span class="token punctuation">\\</span>
+    -v /data/registry:/var/lib/registry <span class="token punctuation">\\</span>
     --name<span class="token operator">=</span><span class="token string">&#39;registry&#39;</span> <span class="token punctuation">\\</span>
     registry:2
 
@@ -42,6 +42,10 @@ import{_ as n,c as s,o as a,a as e}from"./app.3a9754ab.js";const g='{"title":"do
 <span class="token comment"># \u4FEE\u6539docker\u914D\u7F6E\u6587\u4EF6/etc/docker/daemon.json, \u5141\u8BB8http\u65B9\u5F0F\u4F20\u8F93</span>
 <span class="token comment"># \u56E0\u4E3A\u662Fjson\u683C\u5F0F, \u8FD9\u4E2A\u7C98\u8D34\u8FDB\u53BB\u4E4B\u540E,\u6CE8\u610F\u524D\u540E\u662F\u5426\u8981\u52A0\u9017\u53F7</span>
 <span class="token comment"># &quot;insecure-registries&quot;: [&quot;\${registry_ip}:5000&quot;] ,</span>
+<span class="token comment">#	&quot;insecure-registries&quot;: [</span>
+<span class="token comment">#		&quot;10.10.10.10:5000&quot;</span>
+<span class="token comment">#	]</span>
+    
 <span class="token function">service</span> <span class="token function">docker</span> restart
 
 <span class="token comment"># Step 6: </span>
@@ -51,7 +55,11 @@ import{_ as n,c as s,o as a,a as e}from"./app.3a9754ab.js";const g='{"title":"do
 <span class="token function">docker</span> push <span class="token variable">\${registry_ip}</span>:5000/myubuntu:1.0
 <span class="token comment"># \u4E0A\u4F20\u540E\u67E5\u770B</span>
 <span class="token function">curl</span> -XGET http://<span class="token variable">\${registry_ip}</span>:5000/v2/_catalog
-
+<span class="token comment"># \u67E5\u770B\u6240\u6709\u7684image\u548Ctag</span>
+<span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> -XGET http://$<span class="token punctuation">{</span>registry_ip<span class="token punctuation">}</span>:5000/v2/_catalog <span class="token operator">|</span> jq <span class="token string">&#39;.repositories[] | tostring&#39;</span><span class="token variable">)</span></span>
+<span class="token keyword">do</span> 
+    <span class="token function">curl</span> -s -XGET http://<span class="token variable">\${registry_ip}</span>:5000/v2/<span class="token variable">\${i<span class="token operator">/</span><span class="token operator">/</span>\\&quot;<span class="token operator">/</span>}</span>/tags/list
+<span class="token keyword">done</span>
 </code></pre></div><h2 id="\u4ECE\u79C1\u6709\u4ED3\u5E93\u4E0B\u8F7D\u955C\u50CF" tabindex="-1">\u4ECE\u79C1\u6709\u4ED3\u5E93\u4E0B\u8F7D\u955C\u50CF <a class="header-anchor" href="#\u4ECE\u79C1\u6709\u4ED3\u5E93\u4E0B\u8F7D\u955C\u50CF" aria-hidden="true">#</a></h2><div class="language-bash"><pre><code>
 <span class="token comment"># Step 7: </span>
 <span class="token comment"># pull\u4E0B\u8F7D, \u5728\u5176\u4ED6\u5730\u65B9\u4F7F\u7528</span>
@@ -61,4 +69,4 @@ import{_ as n,c as s,o as a,a as e}from"./app.3a9754ab.js";const g='{"title":"do
 <span class="token comment"># \u4ECE\u4ED3\u5E93pull\u4E00\u4E2A</span>
 <span class="token function">docker</span> pull <span class="token variable">\${registry_ip}</span>:5000/myubuntu:1.0
 <span class="token function">docker</span> images
-</code></pre></div>`,10),c=[o];function p(r,i,l,m,k,d){return a(),s("div",null,c)}var h=n(t,[["render",p]]);export{g as __pageData,h as default};
+</code></pre></div>`,10),p=[o];function c(r,l,i,k,m,u){return a(),s("div",null,p)}var h=n(t,[["render",c]]);export{g as __pageData,h as default};
