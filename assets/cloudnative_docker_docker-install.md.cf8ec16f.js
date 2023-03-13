@@ -116,7 +116,7 @@ import{_ as s,c as n,o as a,a as l}from"./app.cf0a218f.js";const A=JSON.parse('{
 <span class="line"><span style="color:#C3E88D;">[Service]</span></span>
 <span class="line"><span style="color:#C3E88D;">Environment=&quot;HTTP_PROXY=</span><span style="color:#A6ACCD;">$HTTP_PROXY</span><span style="color:#C3E88D;">&quot;</span></span>
 <span class="line"><span style="color:#C3E88D;">Environment=&quot;HTTPS_PROXY=</span><span style="color:#A6ACCD;">$HTTP_PROXY</span><span style="color:#C3E88D;">&quot;</span></span>
-<span class="line"><span style="color:#C3E88D;">Environment=&quot;NO_PROXY=10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,127.0.0.1/8,6.86.0.0/16&quot;</span></span>
+<span class="line"><span style="color:#C3E88D;">Environment=&quot;NO_PROXY=10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,127.0.0.0/8,6.86.0.0/16&quot;</span></span>
 <span class="line"><span style="color:#89DDFF;">EOF</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FFCB6B;">systemctl</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">daemon-reload</span></span>
@@ -141,7 +141,7 @@ import{_ as s,c as n,o as a,a as l}from"./app.cf0a218f.js";const A=JSON.parse('{
 <span class="line"><span style="color:#C3E88D;">   {</span></span>
 <span class="line"><span style="color:#C3E88D;">     &quot;httpProxy&quot;: &quot;http://6.86.3.12:3128&quot;,</span></span>
 <span class="line"><span style="color:#C3E88D;">     &quot;httpsProxy&quot;: &quot;http://6.86.3.12:3128&quot;,</span></span>
-<span class="line"><span style="color:#C3E88D;">     &quot;noProxy&quot;: &quot;10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,127.0.0.1/8,6.86.0.0/16&quot;</span></span>
+<span class="line"><span style="color:#C3E88D;">     &quot;noProxy&quot;: &quot;10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,127.0.0.0/8,6.86.0.0/16&quot;</span></span>
 <span class="line"><span style="color:#C3E88D;">   }</span></span>
 <span class="line"><span style="color:#C3E88D;"> }</span></span>
 <span class="line"><span style="color:#C3E88D;">}</span></span>
