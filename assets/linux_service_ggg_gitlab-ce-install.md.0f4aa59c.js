@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.cf0a218f.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"linux/service/ggg/gitlab-ce-install.md"}'),s={name:"linux/service/ggg/gitlab-ce-install.md"};function n(r,c,i,l,o,p){return a(),t("div")}const d=e(s,[["render",n]]);export{g as __pageData,d as default};

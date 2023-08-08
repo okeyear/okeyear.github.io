@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.cf0a218f.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"cloudnative/vmware/index.md"}'),n={name:"cloudnative/vmware/index.md"};function r(o,c,s,d,i,p){return a(),t("div")}const l=e(n,[["render",r]]);export{m as __pageData,l as default};

@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.cf0a218f.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"cloudnative/k8s/index.md"}'),n={name:"cloudnative/k8s/index.md"};function o(r,s,c,d,i,p){return a(),t("div")}const m=e(n,[["render",o]]);export{l as __pageData,m as default};

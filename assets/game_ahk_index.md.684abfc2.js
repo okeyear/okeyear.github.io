@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as t}from"./chunks/framework.0a8b4614.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"game/ahk/index.md","filePath":"game/ahk/index.md","lastUpdated":1655474897000}'),n={name:"game/ahk/index.md"};function r(o,s,d,c,i,m){return a(),t("div")}const f=e(n,[["render",r]]);export{_ as __pageData,f as default};
